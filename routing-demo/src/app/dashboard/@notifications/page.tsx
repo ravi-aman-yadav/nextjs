@@ -1,5 +1,11 @@
 import Card from "@/components/card";
+import Link from "next/link";
 
 export default function Notifications() {
-  return <Card>Notification Page</Card>;
+  return (
+    <Card>
+      <div>Notificats</div>
+      <Link href="/dashboard/archived">Archived</Link>
+    </Card>
+  );
 }
